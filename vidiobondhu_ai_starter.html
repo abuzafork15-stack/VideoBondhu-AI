@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>ভিডিওবন্ধু AI — Free Video Maker</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--card:#131e30;--line:#2a3a52;--text:#f3f6fb;--muted:#aab8cc;--accent:#38d6b0}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(160deg,#0b1220,#101b2d);font-family:system-ui,"Noto Sans Bengali",sans-serif;color:var(--text);line-height:1.55}
+main{max-width:760px;margin:auto;padding:18px}.hero{padding:22px 0 14px}.tag{color:var(--accent);font-weight:700;font-size:.85rem;letter-spacing:.04em}h1{margin:.3rem 0;font-size:1.8rem}p{color:var(--muted)}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:17px;margin:14px 0}
+label{display:block;font-weight:650;margin:12px 0 6px}input,select,textarea{width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);background:#0b1423;color:var(--text);font:inherit}textarea{min-height:88px;resize:vertical}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+button,.linkbtn{display:inline-block;border:0;border-radius:11px;padding:12px 15px;font:inherit;font-weight:750;cursor:pointer;text-decoration:none;text-align:center}.primary{background:var(--accent);color:#06130f;width:100%;margin-top:16px}.secondary{background:#26364d;color:white;border:1px solid #3b4e69}.actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:12px}.result{white-space:pre-wrap;overflow-wrap:anywhere;color:#e5edf7;background:#0a1321;padding:14px;border-radius:12px;border:1px solid var(--line);min-height:100px}.note{font-size:.88rem}.hidden{display:none}.footer{font-size:.8rem;text-align:center;color:var(--muted);padding:16px}
+@media(max-width:520px){.grid{grid-template-columns:1fr}h1{font-size:1.55rem}}
+</style>
+</head>
+<body><main>
+<header class="hero"><div class="tag">FREE • ANDROID FRIENDLY</div><h1>🎬 ভিডিওবন্ধু AI</h1><p>বাংলা YouTube ভিডিওর স্ক্রিপ্ট, দৃশ্য পরিকল্পনা ও AI প্রম্পট তৈরি করার সহজ টুল। ইন্টারনেট ছাড়াও পরিকল্পনার খসড়া তৈরি হবে; আসল AI উত্তর পেতে নিচের প্রম্পট Gemini-তে পাঠাও।</p></header>
+<section class="card">
+<label for="topic">ভিডিওর বিষয়</label><input id="topic" placeholder="যেমন: শূন্য থেকে সফল হওয়ার ৫টি অভ্যাস">
+<div class="grid"><div><label for="duration">দৈর্ঘ্য</label><select id="duration"><option value="2">২ মিনিট</option><option value="3">৩ মিনিট</option><option value="5">৫ মিনিট</option><option value="6" selected>৬ মিনিট</option><option value="8">৮ মিনিট</option></select></div><div><label for="style">ভিডিওর ধরন</label><select id="style"><option>বাংলা মোটিভেশন</option><option>Money & Success</option><option>শিক্ষামূলক</option><option>গল্পভিত্তিক</option><option>ফ্যাক্টস / ডকুমেন্টারি</option></select></div></div>
+<label for="voice">ভয়েসওভার</label><select id="voice"><option>গভীর, শক্তিশালী পুরুষ কণ্ঠ</option><option>শান্ত ও অনুপ্রেরণামূলক কণ্ঠ</option><option>স্বাভাবিক কথ্য বাংলা</option><option>English voiceover</option></select>
+<label for="visual">ভিজ্যুয়াল স্টাইল</label><select id="visual"><option>সিনেমাটিক, ডার্ক টিল ও সায়ান</option><option>বাস্তব স্টক ফুটেজ</option><option>2D অ্যানিমেশন</option><option>3D সিনেমাটিক</option><option>সাদা-কালো মিনিমাল</option></select>
+<label for="audience">দর্শক (ঐচ্ছিক)</label><input id="audience" placeholder="যেমন: বাংলাদেশের ১৬–৩০ বছরের তরুণ">
+<button class="primary" id="make">প্রম্পট তৈরি করো</button>
+</section>
+<section class="card"><h2>তোমার AI প্রম্পট</h2><div id="result" class="result">এখানে তোমার তৈরি প্রম্পট দেখা যাবে।</div><div class="actions"><button class="secondary" id="copy">কপি করো</button><a class="linkbtn secondary" href="https://gemini.google.com/app" target="_blank" rel="noopener">Gemini খুলুন ↗</a></div><p class="note">ব্যবহার: প্রম্পট কপি → Gemini-তে পেস্ট → তৈরি করা স্ক্রিপ্ট CapCut-এ এডিট করো। Gemini-এর ফ্রি সুবিধা/সীমা অ্যাকাউন্ট ও সময় অনুযায়ী বদলাতে পারে।</p></section>
+<section class="card"><h2>পরের ধাপ</h2><p>১) Gemini-তে স্ক্রিপ্ট তৈরি করো। ২) দৃশ্যের জন্য Pexels-এ ফ্রি ফুটেজ খুঁজো বা ছবি তৈরির প্রম্পট ব্যবহার করো। ৩) CapCut-এ 16:9 টাইমলাইনে ফুটেজ, ভয়েসওভার, সাবটাইটেল ও মিউজিক সাজাও। ৪) 1080p-তে এক্সপোর্ট করো।</p><p class="note">এটি প্রথম সংস্করণের প্রম্পট-সহায়ক; নিজে থেকে ভিডিও রেন্ডার বা AI কণ্ঠ তৈরি করে না।</p></section>
+<div class="footer">ভিডিওবন্ধু AI • ফ্রি স্টার্টার • কোনো API key দরকার নেই</div>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+$('make').addEventListener('click',()=>{
+ const topic=$('topic').value.trim();
+ if(!topic){$('topic').focus();$('topic').placeholder='আগে ভিডিওর বিষয় লিখো';return;}
+ const duration=$('duration').value, style=$('style').value, voice=$('voice').value, visual=$('visual').value, audience=$('audience').value.trim()||'বাংলাভাষী YouTube দর্শক';
+ const scenes=Math.ceil(Number(duration)*6);
+ const prompt=`তুমি একজন অভিজ্ঞ বাংলা YouTube ভিডিও নির্মাতা, চিত্রনাট্যকার ও ভিডিও এডিটর।\n\nভিডিওর বিষয়: ${topic}\nধরন: ${style}\nদৈর্ঘ্য: ${duration} মিনিট\nদর্শক: ${audience}\nভয়েসওভার: ${voice}\nভিজ্যুয়াল স্টাইল: ${visual}\n\nআমার জন্য সম্পূর্ণ প্রোডাকশন প্যাকেজ তৈরি করো। উত্তর বাংলায় দাও (প্রয়োজনীয় সার্চ টার্ম ইংরেজিতে হতে পারে)।\n১. আকর্ষণীয় ৩টি শিরোনাম, একটি থাম্বনেইল টেক্সট ও সংক্ষিপ্ত ভিডিও বিবরণ।\n২. ${duration} মিনিটের স্বাভাবিক, তথ্যসমৃদ্ধ ভয়েসওভার স্ক্রিপ্ট; শুরুতে শক্তিশালী হুক, মাঝখানে উদাহরণ এবং শেষে কার্যকর সমাপ্তি থাকবে। অযাচাইকৃত তথ্য বানাবে না।\n৩. মোট প্রায় ${scenes}টি দৃশ্যের টাইমলাইন দাও। প্রতিটির জন্য শুরু–শেষ সময়, ভয়েসওভারের সংশ্লিষ্ট লাইন, স্ক্রিনে বাংলা লেখা, দৃশ্যের বর্ণনা এবং Pexels-এ খোঁজার ইংরেজি সার্চ টার্ম দাও।\n৪. যেসব দৃশ্য AI ছবি দিয়ে বানানো যায়, সেগুলোর জন্য আলাদা বিস্তারিত image prompt লেখো।\n৫. ব্যাকগ্রাউন্ড মিউজিকের ধরন, সাউন্ড ইফেক্ট, সাবটাইটেল ও CapCut মোবাইল এডিটিং নির্দেশনা দাও।\n৬. ভিডিওটি 16:9, 1080p YouTube long-form হিসেবে পরিকল্পনা করো। কপিরাইটযুক্ত গান বা ফুটেজ ব্যবহারের পরামর্শ দেবে না।\n৭. স্ক্রিপ্টের দৈর্ঘ্য যেন নির্ধারিত সময়ের কাছাকাছি হয়; অযথা পুনরাবৃত্তি করবে না।`;
+ $('result').textContent=prompt;
+});
+$('copy').addEventListener('click',async()=>{
+ const t=$('result').textContent;
+ try{await navigator.clipboard.writeText(t);$('copy').textContent='কপি হয়েছে ✓';setTimeout(()=>$('copy').textContent='কপি করো',1800);}
+ catch(e){const r=document.createRange();r.selectNodeContents($('result'));const s=getSelection();s.removeAllRanges();s.addRange(r);$('copy').textContent='লেখা সিলেক্ট হয়েছে—কপি করো';}
+});
+</script></body></html>
